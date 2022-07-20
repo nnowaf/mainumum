@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'scaffold.dart';
 
 import 'decorationcontainer/decoration.dart';
+import 'rowncolumn/rowcolumn.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DecorationB(),
+      home: RowColumn(),
     );
   }
 }
