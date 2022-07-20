@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class RowColumn extends StatelessWidget {
@@ -57,7 +55,8 @@ class ColumnYouw extends StatelessWidget {
         Text(
           'Sebuah Judul',
           style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-        )
+        ),
+        Text('Lorem dolor sit amet')
       ],
     );
   }
