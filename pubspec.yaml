@@ -60,10 +60,10 @@ flutter:
   assets:
     - images/telkom.png  
 
-  fonts:
-    - family: Roboto
-      fonts:
-        - asset: fonts/Roboto-Italic.ttf
+  #fonts:
+  #  - family: Roboto
+  #    fonts:
+  #      - asset: fonts/Roboto-Italic.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

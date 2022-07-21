@@ -6,6 +6,10 @@ import 'package:mainumum/inputwidget/inputcheckbox.dart';
 import 'package:mainumum/inputwidget/inputradio.dart';
 import 'package:mainumum/inputwidget/inputswitch.dart';
 import 'package:mainumum/inputwidget/textfield.dart';
+import 'package:mainumum/listview/listviewbiasa.dart';
+import 'package:mainumum/listview/listviewbuilder.dart';
+import 'package:mainumum/listview/listviewdinamis.dart';
+import 'package:mainumum/listview/listviewseparate.dart';
 import 'scaffold.dart';
 
 import 'decorationcontainer/decoration.dart';
@@ -34,7 +38,7 @@ class MyApp extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: (){},
           child: Icon(Icons.add, color: Colors.white,), ),
-        body: FontCustom(),
+        body: ListViewSeparated(),
       ),
       
     );
