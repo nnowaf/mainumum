@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mainumum/buttons/buttons.dart';
 import 'scaffold.dart';
 
 import 'decorationcontainer/decoration.dart';
@@ -16,7 +17,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: RowColumn(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('First Cek'),
+          leading: IconButton(onPressed: (){}, icon: Icon(color: Colors.white,Icons.menu)),
+          actions: <Widget>[
+            IconButton(onPressed: () {}, icon: Icon(color: Colors.white, Icons.search))
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){},
+          child: Icon(Icons.add, color: Colors.white,), ),
+        body: Buttonss(),
+      ),
+      
     );
   }
 }
