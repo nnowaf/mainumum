@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mainumum/buttons/buttons.dart';
+import 'package:mainumum/inputwidget/textfield.dart';
 import 'scaffold.dart';
 
 import 'decorationcontainer/decoration.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: (){},
           child: Icon(Icons.add, color: Colors.white,), ),
-        body: Buttonss(),
+        body: TextFielld(),
       ),
       
     );
