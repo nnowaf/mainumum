@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mainumum/buttons/buttons.dart';
+import 'package:mainumum/inputwidget/inputcheckbox.dart';
+import 'package:mainumum/inputwidget/inputradio.dart';
+import 'package:mainumum/inputwidget/inputswitch.dart';
 import 'package:mainumum/inputwidget/textfield.dart';
 import 'scaffold.dart';
 
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: (){},
           child: Icon(Icons.add, color: Colors.white,), ),
-        body: TextFielld(),
+        body: InputCheckButton(),
       ),
       
     );
