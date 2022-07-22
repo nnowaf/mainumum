@@ -29,6 +29,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final String pesan = "Halo, Aku pesan dari Screen Satu";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
           child: ElevatedButton(
             onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context){
-                return NavScreenSecond();
+                return NavScreenSecond(pesan);
               }));
             },
              child: Text('Pindah Screen')),
