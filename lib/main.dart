@@ -13,6 +13,9 @@ import 'package:mainumum/listview/listviewbuilder.dart';
 import 'package:mainumum/listview/listviewdinamis.dart';
 import 'package:mainumum/listview/listviewseparate.dart';
 import 'package:mainumum/navigation/expanded_screen_second.dart';
+import 'package:mainumum/responsivelayout/layoutbuilder.dart';
+import 'package:mainumum/responsivelayout/mediaqueri.dart';
+import 'package:mainumum/responsivelayout/responsivepage.dart';
 import 'scaffold.dart';
 
 import 'decorationcontainer/decoration.dart';
@@ -29,31 +32,9 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final String pesan = "Halo, Aku pesan dari Screen Satu";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('First Cek'),
-          leading: IconButton(onPressed: (){}, icon: Icon(color: Colors.white,Icons.menu)),
-          actions: <Widget>[
-            IconButton(onPressed: () {}, icon: Icon(color: Colors.white, Icons.search))
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: (){},
-          child: Icon(Icons.add, color: Colors.white,), ),
-        body: Center(
-          child: ElevatedButton(
-            onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context){
-                return NavScreenSecond(pesan);
-              }));
-            },
-             child: Text('Pindah Screen')),
-        )
-    );
-
+    return ResponsivePageClass();
   }
 }
 
